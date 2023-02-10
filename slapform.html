@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<body>
+    <head>
+        <style>
+        body {
+            background-color: green;
+        }
+        input {
+            background-color: yellow;
+            color: green;
+        }
+        textarea {
+            border-radius: 9px;
+        }
+        button {
+            border-radius: 10px;
+            color: yellow;
+        }
+        label {
+            color: yellow;
+        }
+        </style>
+        </head>
+    <h1 style="color: yellow;">send me a message</h1>
+<form method="POST"
+action="https://api.slapform.com/1t0eZIyIjj">
+    <label>name: (optional)</label><br><input type="name" placeholder="name"><br>
+<label>Email:</label><br><input type="email" name="email" placeholder="email" required><br>
+<label>message:</label><br><textarea name="message" placeholder="input your message"  required></textarea><br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
