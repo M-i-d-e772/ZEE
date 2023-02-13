@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+        body {
+            margin: 600px 310px 500px 250px;
+            padding-left: 70px;
+        }
+        h1 {
+            color: white;
+        }
+        p {
+            font-weight: bold;
+            color: white;
+        }
+        input {
+            background-color: white;
+           margin: 0 0 15px 10px;
+           height: 40px;
+           width: 285px;
+        }
+        label {
+            font-weight: bold;
+            color: white;
+            margin: 0 0 15px 10px;
+        }
+        textarea {
+            background-color: white;
+            margin: 0 0 20px 10px;
+            height: 50px;
+            width: 285px;
+        }
+        button {
+            width: 310px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+        }
+        form {
+            padding-right: 500px;
+        }
+        fieldset {
+            background-color: limegreen;
+        }
+        </style>
+    </head>
+<body>
+    <form method="POST"
+action="https://api.slapform.com/1t0eZIyIjj">
+        <fieldset>
+    <h1>Contact Us</h1>
+    <p>please use the form below to contact us</p>
+        <label>Name</label><br>
+        <input type="name" placeholder="Enter Name" required><br>
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter Email" required><br>
+        <label>Phone Number</label><br>
+        <input type="tel" placeholder="Enter Phone Number" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" required><br>
+        <label>Message</label><br>
+        <textarea name="message" placeholder="Enter Message" required></textarea><br>
+        <button type="submit">send</button>
+        </fieldset>
+        </form>
+</body>
+</html>
