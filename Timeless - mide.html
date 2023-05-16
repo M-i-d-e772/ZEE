@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Timeless - mide.css">
+    <title>Timeless - playlist</title>
+</head>
+<body>
+    <header id="header">
+        <div class="back_button">
+            <span> <ion-icon name="chevron-back-outline"></ion-icon> </span>
+        </div>
+        <div class="other_options">
+            <span id="cross"> <ion-icon class="cross" name="add-circle-outline"></ion-icon> </span>
+            <span id="options"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></span>
+        </div>
+    </header>
+<div class="container_head">
+    <div class="cover_photo">
+        <img id="img" src="Davido-–-Timeless-Album.jpg">
+    </div>
+    <div class="music_label_top">
+        <span id="now_playing1">---</span><br>
+        <span id="trace" class="artist_name">Davido</span>
+    </div>
+    <div class="tag">
+        <span class="tag">worldwide - 2023</span>
+    </div><br>
+    <div class="buttons">
+        <button onclick="play()" class="play_shuffle one1"><ion-icon class="play" name="play-outline"></ion-icon>  play</button>
+        <button onclick="shuffle()" class="play_shuffle two1"><ion-icon class="shuffle" name="shuffle-outline"></ion-icon>  shuffle</button>
+    </div>
+</div>
+<div class="container_body">
+    <button class="playlistt" onclick="one()" id="playlist_1">
+        <span id="one">1</span> UNAVAILABLE (feat. Musa Keys)
+    </button>
+    <button class="playlistt" onclick="two()" id="playlist_2">
+        <span id="two">2</span>  KANTE (feat. Fave)
+    </button>
+    <button class="playlistt" onclick="three()" id="playlist_3">
+        <span id="three">3</span>  OVER DEM (Official Audio)
+    </button>
+    <button class="playlistt" onclick="four()" id="playlist_4">
+        <span id="four">4</span>  U(JUJU) (feat. Skepta)
+    </button>
+    <button class="playlistt" onclick="five()" id="playlist_5">
+        <span id="five">5</span>  FOR THE ROAD (official Audio)
+    </button>
+    <button class="playlistt" onclick="six()" id="playlist_6">
+        <span id="six">6</span>  LCND (Official Audio)
+    </button>
+    <button class="playlistt" onclick="push()" id="playlist_7">
+        <span id="eight">7</span>  <span id="replace"><input id="user" type="text" placeholder="Enter Name & Song Name" ><span id="push">submit</span></span>
+    </button>
+    <div class="now_playing">
+            <span onclick="seven()" id="not_playing">☹  Not Playing</span>
+    </div>
+    <div id="added" class="added">
+            <span id="uartist_name"><label for="text">Upcoming Artist Name:</label><input id="text" type="text" placeholder="Enter Your Name"></span><button onclick="done()">Submit</button>
+    </div>
+</div>
+<script src="Timeless - mide.js">
+</script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script module src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+</script>
+</body>
+</html>
