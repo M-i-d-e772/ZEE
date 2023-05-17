@@ -4,6 +4,10 @@ var music3 = new Audio('musicfile3.mp3');
 var music4 = new Audio('musicfile4.mp3');
 var music5 = new Audio('musicfile5.mp3');
 var music6 = new Audio('musicfile6.mp3');
+alert("Hello, click on now playing to pause song.... Thank you!");
+function line() {
+    alert("click on now playing to pause song");
+}
 function play() {
     const el = document.querySelector('img')
     const one = document.getElementById('one');
@@ -408,7 +412,7 @@ function seven() {
     const playlist_5 = document.getElementById('playlist_5');
     const playlist_6 = document.getElementById('playlist_6');
     const playlist_7 = document.getElementById('playlist_7');
-    now_playing1.innerHTML = "---";
+    now_playing1.innerHTML = "||";
     not_playing.innerHTML = 'Now playing : ' + '---';
     playlist_1.style.color = "white"
     playlist_2.style.color = "white"
@@ -485,4 +489,19 @@ function done() {
     const text = document.getElementById('text').value;
     trace.innerHTML = text;
     removed.innerHTML = " ";
+}
+function display() {
+    const playlist_7 = document.getElementById('playlist_7')
+    const added = document.getElementById('added')
+
+    playlist_7.style.display = "block";
+    added .style.display = "block";
+    added.style.textAlign = "center";
+}
+function back() {
+    const playlist_7 = document.getElementById('playlist_7')
+    const added = document.getElementById('added')
+
+    playlist_7.style.display = "none";
+    added .style.display = "none";
 }

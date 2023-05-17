@@ -144,3 +144,6 @@ label{
     background-color: transparent;
     color: white;
 }
+#playlist_7, #added {
+    display: none;
+}
